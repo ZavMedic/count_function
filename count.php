@@ -22,3 +22,17 @@ function getTextLength(string $text) {
 print getTextLength('Salom');  // 5
 print getTextLength('S alom!');  // 7
 */
+
+function getLargeNumber($a, $b, $c) {
+    if ($a > $b && $a > $c) {
+        return $a;
+    } else if ($b > $a && $b > $c) {
+        return $b;
+    } else if ($b > $a && $c > $b){
+        return $c;
+    }
+}
+/*
+print getLargeNumber(5, 10, 12);		// 12
+print getLargeNumber(1988, 10, 5);	// 1988
+*/
