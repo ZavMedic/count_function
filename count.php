@@ -9,6 +9,12 @@ print getTotalCount([]);                            // 0
 print getTotalCount(['banan', 'olma', 'shaftoli']); // 3
 */ 
 
+function calc($foo, $bar, $baz)
+{
+return $foo+$bar+$baz;
+}
+// print calc(5, 1, 7); //13
+
 function getTextLength(string $text) {
     return strlen($text);
 }
