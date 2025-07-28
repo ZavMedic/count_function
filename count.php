@@ -28,9 +28,8 @@ function getLargeNumber($a, $b, $c) {
         return $a;
     } else if ($b > $a && $b > $c) {
         return $b;
-    } else if ($b > $a && $c > $b){
-        return $c;
     }
+        return $c;
 }
 /*
 print getLargeNumber(5, 10, 12);		// 12
