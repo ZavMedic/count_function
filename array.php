@@ -21,3 +21,23 @@ $uff = isThereKey(['name' => 'John', 'fam' => 'Doe'], 'bar');
 if ($uff == false) {
     echo "Yolg'on";
 }
+
+/* TOPSHIRIQ
+    isThereValue nomli funksiya yarating.
+
+Bu funksiya massiv kalitiga qiymat kiritilgan yoki yo'qligini tekshirsin.
+
+Qiymat bor bo'lsa true, yo'q bo'lsa false qaytarsin.
+    foo(['name' => 'John', 'fam' => ''], 'name');		// true
+foo(['name' => 'John', 'fam' => ''], 'fam');		// false
+foo(['name' => 'John', 'fam' => ''], 'bar');		// false
+*/
+// nimalar qilganimni tushunmadim, tasodifan to'g'ri yozilgan kod. php.net isset, empty
+function isThereValue(array $name, $a) {
+if (empty($name[$a])) {
+return false;
+}
+if (isset($name[$a])) {
+return true;
+}
+}
